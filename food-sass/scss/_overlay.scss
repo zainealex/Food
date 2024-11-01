@@ -1,0 +1,43 @@
+@import "variables";
+.overlay {
+  background-image: linear-gradient(
+      rgba(243, 94, 73, 0.7),
+      rgba(243, 94, 73, 0.7)
+    ),
+    url(../img/overlay.png);
+  padding-top: 250px;
+  padding-bottom: 250px;
+  p {
+    font-size: 28px;
+    font-family: $my-Fonts;
+    font-weight: bold;
+    color: $accent-Color;
+  }
+  h1 {
+    font-size: 35px;
+    font-family: $my-overlayFonts;
+
+    color: $accent-Color;
+  }
+}
+
+@media (max-width: 876px) {
+  .overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (max-width: 520px) {
+  .overlay {
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    p {
+      font-size: 24px;
+    }
+    h1 {
+      font-size: 30px;
+    }
+  }
+}

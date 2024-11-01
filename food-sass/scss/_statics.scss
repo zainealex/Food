@@ -1,0 +1,60 @@
+@import "variables";
+
+.statics {
+  background-color: $primary-Color;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .text {
+    h1 {
+      font-size: 45px;
+      font-family: $my-Fonts;
+      font-weight: bold;
+      color: $accent-Color;
+    }
+
+    p {
+      font-size: 20px;
+      font-family: $button-fonts;
+
+      color: $accent-Color;
+    }
+  }
+  .conter {
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 972px) {
+  .statics {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .conter {
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 512px) {
+  .statics {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .statics {
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}

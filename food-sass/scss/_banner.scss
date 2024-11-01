@@ -1,0 +1,122 @@
+@import "variables";
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 160px;
+
+  .navbar-toggler {
+    width: 55px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    outline: 1px dashed white;
+    background-color: $primary-Color !important;
+  }
+  .navbar-toggler:hover {
+    background-color: $accent-Color !important;
+    outline: 1px dashed $primary-Color;
+  }
+
+  h1 {
+    color: $accent-Color;
+    font-size: 60px;
+    font-family: $my-Fonts;
+    font-weight: bold;
+    margin-top: 80px;
+  }
+  p {
+    color: $accent-Color;
+    font-size: 25px;
+    font-family: $my-paragrahFonts;
+  }
+  button {
+    background-color: $bg-button;
+    border: none;
+    font-size: 20px;
+    font-family: $button-fonts;
+    color: $accent-Color;
+    width: 250px;
+    height: 50px;
+    border-radius: 100px;
+    outline: none;
+  }
+  button:hover {
+    background-color: $secondary-Color;
+    color: $primary-Color;
+  }
+  .navbar {
+    //     background-image: url(../img/banner.png);
+
+    a {
+      margin-right: 43%;
+    }
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          color: $accent-Color;
+
+          font-family: $my-navBar;
+          margin-right: 30px;
+        }
+        a:hover {
+          color: $primary-Color;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: $accent-Color;
+    font-size: 60px;
+    font-family: $my-Fonts;
+    font-weight: bold;
+  }
+}
+@media (max-width: 1158px) {
+  .header {
+    .navbar {
+      a {
+        margin-right: 30%;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    .navbar {
+      //     background-image: url(../img/banner.png);
+      ul {
+        li:first-child {
+          margin-top: 30px;
+        }
+        li {
+          a {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 436px) {
+  .header {
+    padding-bottom: 90px;
+    h1 {
+      font-size: 43px;
+    }
+    p {
+      color: $accent-Color;
+      font-size: 20px;
+      font-family: $my-paragrahFonts;
+    }
+    button {
+      font-size: 18px;
+      width: 200px;
+      height: 40px;
+    }
+  }
+}

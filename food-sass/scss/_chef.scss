@@ -1,0 +1,80 @@
+@import "variables";
+.chef {
+  background-color: $secondary-Color;
+
+  h1 {
+    font-size: 45px;
+    font-family: $my-Fonts;
+    font-weight: bold;
+    color: $primary-Color;
+  }
+
+  p {
+    font-size: 20px;
+    font-family: $button-fonts;
+
+    color: $primary-Color;
+  }
+  .service {
+    img {
+      border-radius: 100%;
+      width: 200px;
+      height: 200px;
+    }
+
+    h3 {
+      font-size: 25px;
+      font-family: $my-Fonts;
+      font-weight: bold;
+      color: $primary-Color;
+    }
+    p {
+      font-size: 20px;
+      font-family: $my-paragrahFonts;
+      font-weight: bold;
+
+      color: $primary-Color;
+    }
+  }
+}
+
+// CHEF
+
+@media (max-width: 512px) {
+  .chef {
+    .service {
+      img {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+      }
+      h3 {
+        font-size: 20px;
+        font-family: $my-Fonts;
+        font-weight: bold;
+        color: $primary-Color;
+      }
+      p {
+        font-size: 18px;
+        font-family: $my-paragrahFonts;
+        font-weight: bold;
+
+        color: $primary-Color;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .chef {
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+
+// CHEF

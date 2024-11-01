@@ -1,0 +1,110 @@
+@import "variables";
+
+.big-burger {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $secondary-Color;
+  .left {
+    h1 {
+      color: $primary-Color;
+      font-size: 60px;
+      font-family: $my-Fonts;
+      font-weight: bold;
+    }
+    p {
+      color: $primary-Color;
+      font-size: 25px;
+      font-family: $my-paragrahFonts;
+    }
+    button {
+      background-color: $primary-Color;
+      color: $accent-Color;
+      border: none;
+      font-size: 20px;
+      font-family: $button-fonts;
+
+      width: 250px;
+      height: 50px;
+      border-radius: 100px;
+      outline: none;
+    }
+    button:hover {
+      background-color: black;
+      color: $primary-Color;
+    }
+  }
+  .right {
+    img {
+      width: 400px;
+      height: 400px;
+      border-radius: 100%;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .big-burger {
+    .left {
+      button {
+        margin-bottom: 65px;
+      }
+    }
+  }
+}
+@media (max-width: 982px) {
+  .big-burger {
+    .right {
+      img {
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+      }
+    }
+
+    .left {
+      button {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 566px) {
+  .big-burger {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .right {
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+      }
+    }
+    .left {
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        font-size: 20px;
+      }
+      button {
+        margin-bottom: 55px;
+        font-size: 18px;
+        width: 200px;
+        height: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .big-burger {
+    .left {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
